@@ -1,0 +1,18 @@
+.EmptyComponent h1 {
+    font-family: 'Nunito', sans-serif;
+    color: var(--white);
+    padding: 5px 10px;
+    position: fixed;
+    top: 60%;
+    left: 70%;
+    z-index: 1;
+    font-size:xx-large;
+}
+
+.EmptyComponent svg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}

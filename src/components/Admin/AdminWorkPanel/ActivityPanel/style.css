@@ -1,0 +1,168 @@
+.ActivityPanel .PanelTop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.ActivityPanel .PanelTop form {
+    display: flex;
+    width: 70%;
+}
+
+.ActivityPanel .PanelTop form input {
+    width: 80%;
+    padding: 15px 20px;
+    font-size: medium;
+    outline: none;
+    border: none;
+    background-color: var(--secondary-black);
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.ActivityPanel .PanelTop form button {
+    width: 10%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    color: var(--black);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #CACACA;
+}
+
+.ActivityPanel .receipt_box{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.ActivityPanel .receipt {
+    background-color: #ffffffae;
+    width: 25rem;
+    position: relative;
+    padding: 1rem;
+    margin: 15px 10px;
+    box-shadow: 0 -0.4rem 1rem -0.4rem rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.ActivityPanel .receipt:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.ActivityPanel .receipt:after {
+    background-image: linear-gradient(135deg, #ffffffae 0.5rem, transparent 0), linear-gradient(-135deg, #ffffffae 0.5rem, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 1rem;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+}
+
+.ActivityPanel .receipt__header {
+    text-align: center;
+}
+
+
+.ActivityPanel .receipt__title {
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin: 1rem 0 0.5rem;
+}
+
+.ActivityPanel .receipt__date {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0.5rem 0 1rem;
+}
+
+.ActivityPanel .receipt__list {
+    margin: 2rem 0 1rem;
+    padding: 0 1rem;
+}
+
+.ActivityPanel .receipt__list-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.ActivityPanel .receipt__list-row:after {
+    content: '';
+    display: block;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -0.25rem;
+    z-index: 1
+}
+
+.ActivityPanel .receipt__item {
+    z-index: 2;
+    padding: 0 0.15rem 0 0;
+    color: #666;
+}
+
+.ActivityPanel .receipt__cost {
+    margin: 0;
+    padding: 0 0 0 0.15rem;
+    z-index: 2;
+    color: var(--black);
+}
+
+.ActivityPanel .receipt__list-row--total {
+    border-top: 2px solid var(--blue);
+    padding: 1.5rem 0 0;
+    margin: 1.5rem 0 0;
+    font-weight: 700;
+}
+
+.ActivityPanel .dataArrow{
+    color: var(--black);
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.ActivityPanel .receipt_data{
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: 2px dotted #666;
+    border-radius: 10px;
+    display: none;
+}
+
+.ActivityPanel .soldBuy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.ActivityPanel .dates{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.ActivityPanel .soldCount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

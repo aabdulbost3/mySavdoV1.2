@@ -1,0 +1,248 @@
+.addPhone {
+    width: 100%;
+    display: flex;
+}
+
+.addPhone .addButton {
+    border: none;
+    width: 11em;
+    height: 3.5em;
+    border-radius: 0.7em;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: #1C1A1C;
+    cursor: pointer;
+    transition: all 450ms ease-in-out;
+}
+
+.addPhone .addButton i {
+    font-size: 15px;
+    color: #AAAAAA;
+    transition: all 800ms ease;
+}
+
+.addPhone .addButton span {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: medium;
+    transition: all 800ms ease;
+}
+
+.addPhone .addButton:hover {
+    background: linear-gradient(0deg, #A47CF3, #683FEA);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+        inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+        0px 0px 180px 0px #9917FF;
+    transform: translateY(-2px);
+}
+
+.addPhone .addButton:hover span {
+    color: white;
+}
+
+.addPhone .addButton:hover i {
+    color: white;
+    transform: scale(1.2);
+}
+
+.addPhone .addButton:active i,
+.addPhone .addButton:active span {
+    display: none;
+}
+
+.addPhone-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 108;
+}
+
+.addModal {
+    position: fixed;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    top: 35%;
+    right: 37%;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(0deg, #a47cf3d7, #673feaa3);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+        inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+        0px 0px 180px 0px #9917FF;
+    z-index: 109;
+    transition: .7s;
+    animation: modal;
+    animation-duration: 1s;
+}
+
+.addCard {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease;
+    will-change: transform;
+    text-align: center;
+    cursor: pointer;
+    animation-name: card;
+    animation-duration: 2s;
+}
+
+.addCard:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.addCard i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.addCard h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.addCard p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+@keyframes modal {
+    from {
+        top: 130px;
+        right: 60px;
+        width: 100px;
+        height: 20px;
+
+    }
+
+    to {
+        top: 35%;
+        right: 37%;
+        width: 400px;
+        height: 230px;
+    }
+}
+
+@keyframes card {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.imeiCard {
+    width: 100%;
+    max-width: 100%;
+}
+
+.imeiModal {
+    position: fixed;
+    background: #ffffff;
+    padding: 1rem;
+    left: 10%;
+    right: 10%;
+    top: -10%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.imeiModal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.imeiModal p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.imeiModal span {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.imeiModal h3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.imeiModal input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.imeiModal input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.input-error {
+    border-color: #e63946 !important;
+}
+
+.error-text {
+    color: #e63946 !important;
+    font-size: 0.9rem;
+}
+
+.imeiModal button {
+    background: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.imeiModal button:hover {
+    background: #0056b3;
+}
+
+.imeiModal button:disabled {
+    background: #e0e0e0;
+    cursor: not-allowed;
+}

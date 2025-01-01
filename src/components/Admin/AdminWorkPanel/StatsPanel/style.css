@@ -1,0 +1,45 @@
+.statsPanel {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.CombinedChart {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+:root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: rgba(255, 255, 255, 0.2);
+    --select-bg: rgba(255, 255, 255, 0.2);
+}
+
+.chartMonth {
+    margin-top: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+        linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.chartMonth option {
+    color: inherit;
+    color: #FFF;
+    background-color: #121212;
+}

@@ -1,0 +1,21 @@
+.Error500 {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.Error500 img {
+    width: 35dvw !important;
+    height: 35dvw;
+    margin-top: 0 !important;
+}
+.Error500 h1{
+  color: rgb(255, 118, 118);
+  font-weight: 800;
+}
+.Error500 p{
+  color: var(--black);
+  font-weight: 800;
+  margin-bottom: 1dvw;
+}

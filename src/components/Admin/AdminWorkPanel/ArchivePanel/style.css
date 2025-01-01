@@ -1,0 +1,122 @@
+.ArchivePanel .PanelTop{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.ArchivePanel .PanelTop form{
+    display: flex;
+    width: 70%;
+}
+.ArchivePanel .PanelTop form input{
+    width: 80%;
+    padding: 15px 20px;
+    font-size:medium;
+    outline: none;
+    border: none;
+    background-color: var(--secondary-black);
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+.ArchivePanel .PanelTop form button{
+    width: 10%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    color: var(--white);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--black);
+    z-index: 2;
+}
+.ArchivePanel .product{
+    margin: 50px 0;
+}
+.ArchivePanel .product h2{
+    margin-bottom: 10px;
+    color: #666;
+}
+.ArchivePanel .productPanel{
+    margin: 0 5% 0 1%;
+    box-shadow: var(--box-shadow);
+    background-color: #CACACA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.ArchivePanel .mainPanel{
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    color: var(--white);
+    background-color: var(--secondary-black);
+    border-radius: 10px;
+}
+.ArchivePanel .mainPanel img{
+    width: 50px;
+    transition: 1s;
+    cursor: zoom-in;
+}
+.ArchivePanel .mainPanel .imageIcon{
+    font-size: xx-large;
+}
+.ArchivePanel .mainPanel img:hover{
+    transform: scale(3);
+}
+.ArchivePanel .mainPanel h3{
+    margin-left: 10px;
+}
+.ArchivePanel .mainPanel h4{
+    margin-left: auto;
+    padding-right: 20px;
+    color: #878686;
+    position: relative;
+}
+.ArchivePanel .mainPanel h4 span{
+    color: var(--white);
+    cursor: pointer;
+}
+.ArchivePanel .secondPanel{
+    padding: 10px 20px;
+    background-color: #CACACA;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.ArchivePanel .buyPanel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ArchivePanel .buyPanel h4{
+    margin: 4px 0;
+    color: #5e5e5e;
+}
+.ArchivePanel .buyPanel h4 span{
+    color: var(--black);
+}
+.ArchivePanel .copyStatus {
+    position: absolute;
+    background: var(--black);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    top: -60px;
+    right: 0;
+    padding-bottom: 20px;
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    z-index: 10;
+}
+
+.ArchivePanel .imei:hover .copyStatus {
+    display: flex;
+}

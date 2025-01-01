@@ -1,0 +1,76 @@
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 15px 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    font-family: 'Arial', sans-serif;
+    color: var(--black);
+    position: fixed;
+    top: 20px;
+    right: 2%;
+    z-index: 1000;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-in-out;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.alert.closing {
+    opacity: 0;
+    transform: translateX(250px);
+}
+
+.alert-text {
+    flex: 1;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a5368;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    animation: progress linear forwards;
+}
+
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}

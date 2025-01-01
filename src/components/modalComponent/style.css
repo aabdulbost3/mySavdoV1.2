@@ -1,0 +1,59 @@
+.ModalImage {
+    width: 40% !important;
+}
+
+.dataModal form {
+    display: flex;
+}
+
+.dataModal form div {
+    margin-right: 5%;
+}
+
+.dataModal form textarea {
+    width: 100%;
+}
+
+.upload-box {
+    border: 2px dashed #28a6e5;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-box:hover {
+    background-color: #f0f8ff;
+    border-color: #57c96a;
+}
+
+.upload-box p {
+    font-size: 16px;
+    color: #28a6e5;
+    text-align: center;
+}
+
+.image-preview {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: red;
+    margin-left: 5px;
+}

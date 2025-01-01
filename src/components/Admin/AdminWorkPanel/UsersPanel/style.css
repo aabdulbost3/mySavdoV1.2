@@ -1,0 +1,55 @@
+.UsersPanel .PanelTop{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.UsersPanel .PanelTop form{
+    display: flex;
+    width: 70%;
+}
+.UsersPanel .PanelTop form input{
+    width: 80%;
+    padding: 15px 20px;
+    font-size:medium;
+    outline: none;
+    border: none;
+    background-color: var(--secondary-black);
+    color: var(--white);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+.UsersPanel .PanelTop form button{
+    width: 10%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    color: var(--white);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--black);
+    z-index: 2;
+}
+.UsersPanel .PanelTop .addAdmin{
+    padding: 15px 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: small;
+    cursor: pointer;
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    box-shadow: vaR(--box-shadow);
+}
+.UsersPanel .PanelTop .addAdmin:active{
+    transform: scale(0.99);
+}
+.UsersPanel .PanelTop .addAdmin i{
+    margin-left: 5px;
+    font-size: larger;
+}
